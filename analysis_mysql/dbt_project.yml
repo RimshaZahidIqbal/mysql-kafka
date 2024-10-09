@@ -1,0 +1,30 @@
+# Name of the DBT project
+name: 'inventory_analysis'
+version: '1.0.0'
+
+# Config version
+config-version: 2
+
+# The path to your model files
+# dbt will look here for SQL files to run
+# and it will look for specific subfolders such as "models"
+model-paths: ["models"]
+
+# Data warehouse connection settings
+# Specify the target MySQL warehouse configuration
+profile: 'inventory_mysql'
+
+# The default database/schema where your models will be created
+target-path: "target"
+clean-targets:
+  - "target"
+
+# Specify folders where you want DBT to find SQL models
+# All .sql files in the "models" folder will be executed
+models:
+  inventory:
+    # Configuration for models in this directory
+    top_selling_products:
+      materialized: view
+    top_selling_employees:
+      materialized: view

@@ -1,0 +1,58 @@
+[0m18:05:00.035811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adbf3775d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adbf377990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adbf3769d0>]}
+
+
+============================== 18:05:00.039498 | e44870a6-3780-4008-b67b-98d2c3bc4904 ==============================
+[0m18:05:00.039498 [info ] [MainThread]: Running with dbt=1.7.18
+[0m18:05:00.040224 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/rimsha/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:05:11.148186 [debug] [MainThread]: Starter project path: /home/rimsha/.local/lib/python3.11/site-packages/dbt/include/starter_project
+[0m18:05:11.156177 [info ] [MainThread]: 
+Your new dbt project "analysis_mysql" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:05:11.156744 [info ] [MainThread]: Setting up your profile.
+[0m18:05:14.355196 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 14.345924, "process_user_time": 1.320177, "process_kernel_time": 0.096745, "process_mem_max_rss": "102728", "process_in_blocks": "54728", "process_out_blocks": "80"}
+[0m18:05:14.355694 [debug] [MainThread]: Command `dbt init` succeeded at 18:05:14.355551 after 14.35 seconds
+[0m18:05:14.356025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adc065bb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adbf3c0c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74adc308c850>]}
+[0m18:05:14.356370 [debug] [MainThread]: Flushing usage events
+[0m18:08:00.043177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a65766a2910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6577347910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a65766a2710>]}
+
+
+============================== 18:08:00.045505 | d08205bc-a74e-43c1-8dc6-013a831b6a26 ==============================
+[0m18:08:00.045505 [info ] [MainThread]: Running with dbt=1.7.18
+[0m18:08:00.045966 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/rimsha/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m18:08:00.046380 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rimsha/Desktop/360 projects/mysql-kafka/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:08:00.047138 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.029648695, "process_user_time": 1.243321, "process_kernel_time": 0.061966, "process_mem_max_rss": "98356", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m18:08:00.047623 [debug] [MainThread]: Command `dbt seed` failed at 18:08:00.047489 after 0.03 seconds
+[0m18:08:00.047942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a65764d4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6577346a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a65764f67d0>]}
+[0m18:08:00.048257 [debug] [MainThread]: Flushing usage events
+[0m18:08:05.896834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781626f9e390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781626f9b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781626f9b950>]}
+
+
+============================== 18:08:05.898607 | d2b088cd-9a2d-4c4c-935d-e401132ec633 ==============================
+[0m18:08:05.898607 [info ] [MainThread]: Running with dbt=1.7.18
+[0m18:08:05.899188 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rimsha/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:08:05.899843 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rimsha/Desktop/360 projects/mysql-kafka/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:08:05.900757 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.028786976, "process_user_time": 1.222863, "process_kernel_time": 0.063992, "process_mem_max_rss": "98200", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m18:08:05.901377 [debug] [MainThread]: Command `dbt run` failed at 18:08:05.901214 after 0.03 seconds
+[0m18:08:05.901824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78162ace55d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78162ace53d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781626deeb50>]}
+[0m18:08:05.902266 [debug] [MainThread]: Flushing usage events

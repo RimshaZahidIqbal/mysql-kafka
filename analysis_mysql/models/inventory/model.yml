@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: top_employees
+    description: "Top 5 employees with the highest total orders."
+    columns:
+      - name: employeeNumber
+        description: "The unique number identifying the employee."
+        tests:
+          - not_null
+          - unique
+      - name: firstName
+        description: "The first name of the employee."
+        tests:
+          - not_null
+      - name: lastName
+        description: "The last name of the employee."
+        tests:
+          - not_null
+      - name: total_orders
+        description: "The total number of orders handled by the employee."
+        tests:
+          - not_null
+
+  - name: top_sold_products
+    description: "Top 5 sold products based on quantity ordered."
+    columns:
+      - name: productCode
+        description: "The unique code identifying the product."
+        tests:
+          - not_null
+          - unique
+      - name: productName
+        description: "The name of the product."
+        tests:
+          - not_null
+      - name: total_sold
+        description: "The total quantity sold for the product."
+        tests:
+          - not_null
